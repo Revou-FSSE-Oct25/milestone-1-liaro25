@@ -8,7 +8,7 @@ The goal is to create a simple personal Curriculum Vitae Website using **HTML**.
 
 ## Features
 - 4 main sections: 
-- Home, About, Working Journey, Companies I've worked with/for and Schools I attend and Contact  
+- Home, About, Working Journey, Companies I've worked with/for and Schools I attend, Projects and Contact  
 
 
 ## Deployment
