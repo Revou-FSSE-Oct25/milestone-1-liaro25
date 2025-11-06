@@ -274,20 +274,18 @@ nav a:hover::after {
 
 /* ===== PROJECTS SECTION ===== */
 .projects {
-  background-color: #F7D9C4; /* warna salem */
+  background-color: #F7D9C4; 
   padding: 60px 0;
 }
 
 .projects h2 {
   font-size: 32px;
   font-weight: bold;
-  color: #3F2F19; /* coklat elegan */
+  color: #3F2F19; 
   margin-bottom: 20px;
-  text-align: center;
 }
 
 .projects-sub {
-  text-align: center;
   color: #3F2F19;
   margin-bottom: 40px;
   font-size: 17px;
