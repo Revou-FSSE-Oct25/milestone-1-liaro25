@@ -4,11 +4,11 @@
 
 ## Overview
 Bismillah this is my first website making for RevoU’s Software Engineering Program assignment. 
-The goal is to create a simple personal website using **HTML**.
+The goal is to create a simple personal Curriculum Vitae Website using **HTML**.
 
 ## Features
 - 4 main sections: 
-- Home, About, Projects, and Contact  
+- Home, About, Working Journey, Companies I've worked with/for and Schools I attend and Contact  
 
 
 ## Deployment
