@@ -1,170 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lia Rosliany | Personal Website</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; color: #000000;">
 
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lia Rosliany | Personal Website</title>
-</head>
 <body>
 
-  <!-- ===== HEADER / NAVIGATION ===== -->
-  <header>
-    <h1>Lia Rosliany</h1>
+  <header class="hero">
+    <h1>LIA ROSLIANY</h1>
+
     <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#journey">Working Journey</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#companies">Companies</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
-  
-    <!-- ===== HOME ===== -->
-    <section id="home" style="text-align: center; margin-bottom: 60px;">
-      <h2>Welcome! 👋</h2>
-      <p>
-        Hi, I’m <strong>Lia Rosliany</strong> — an independent freelancer based in <strong>Tokyo, Japan</strong>.  
-        Currently working with <strong>Halal Gourmet Japan</strong> to support social media, app insights, and marketing.
-      </p>
-      <p>
-        I’m a lifelong learner balancing work, family, and personal growth while studying at 
-        <strong>RevoU’s Full Stack Software Engineering Program</strong>.
-      </p>
-    </section>
 
-    <hr style="margin: 40px 0;">
 
-    <!-- ===== ABOUT ME ===== -->
-    <section id="about" style="margin-bottom: 60px;">
-      <h2 style="text-align: center;">About Me 👩‍💻</h2>
-      <p>
-        I’m a passionate professional with over <strong>10 years of experience</strong> in the 
-        <strong>Mobile Telecommunications industry</strong>.  
-        I’ve collaborated with top telecom providers like <strong>Telkomsel</strong>, <strong>Indosat</strong>, 
-        <strong>Axis</strong>, <strong>XL</strong>, and <strong>HCPT</strong>.
-      </p>
-      <p>
-        My career journey includes roles at <strong>Amdocs</strong>, <strong>NSN</strong>, and <strong>Huawei</strong>, 
-        where I specialized in <strong>billing systems</strong> and <strong>CRM project implementations</strong>.
-      </p>
-      <p>
-        I’m currently living in <strong>Tokyo, Japan</strong> with my husband and three amazing kids, balancing 
-        freelance work, parenting, and learning Japanese — slow but steady, as they say, wins the race! 🐢💪
-      </p>
-    </section>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
 
-    <hr style="margin: 40px 0;">
+      <!-- Foto -->
+      <img src="assets/images/pasFoto.png" alt="Photo of Lia Rosliany" class="about-photo">
 
-    <!-- ===== WORKING JOURNEY ===== -->
-    <section id="journey" style="margin-bottom: 60px;">
-      <h2 style="text-align: center;">Working Journey 🚀</h2>
-      <table style="max-width: 800px; margin: 20px auto; border-collapse: collapse; width: 100%; text-align: left;">
-        <thead style="background-color: #333; color: white;">
-          <tr>
-            <th style="padding: 10px; border: 1px solid #ccc;">Year</th>
-            <th style="padding: 10px; border: 1px solid #ccc;">Company</th>
-            <th style="padding: 10px; border: 1px solid #ccc;">Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;">2024–2025</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">TCJ Japanese Language School</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Student</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;">2015–2020</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Lionbridge (acquired by Appen)</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Social Media Evaluator</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;">2012–2016</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Amdocs Indonesia</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Senior Subject Matter Expert</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;">2007–2011</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Nokia Siemens Networks</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">Solution Engineer</td>
-          </tr>
-          <tr>
-            <td style="padding: 10px; border: 1px solid #ccc;">2006–2007</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">PT. PCCW Cascade for Huawei Managed Services</td>
-            <td style="padding: 10px; border: 1px solid #ccc;">IN & RBT Engineer</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <!-- Teks -->
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I’ve been living in Tokyo since 2020, following my husband, and I’m a mom of three. I bring
+          <strong>10+ years of experience</strong> in the Mobile Telecommunications industry—
+          planning, designing, and supporting medium-to-large application systems for providers such as
+          Telkomsel, Indosat, Axis, XL, and HCPT.
+        </p>
 
-    <hr style="margin: 40px 0;">
+        <p>
+          Today, my love of food leads my work with <strong>Halal Gourmet Japan</strong>, where I explore halal
+          eateries,
+          create videos, and share insights to help Muslim residents and tourists enjoy food comfortably across Japan.
+        </p>
 
-    <!-- ===== SKILLS ===== -->
-    <section id="skills" style="background-color: #f5f5f5; padding: 40px 20px;">
-      <h2 style="text-align: center;">Skills 🧠</h2>
+        <p>
+          I’m also expanding my skills through <strong>RevoU’s Full-Stack Software Engineering</strong> program while
+          studying
+          Japanese—slow but steady wins the race.
+        </p>
+      </div>
 
-      <h3 style="text-align: center;">Technical Skills</h3>
-      <ul style="max-width: 700px; margin: auto;">
-        <li>Amdocs Ordering 8.1 - EPC Implementation</li>
-        <li>Online Charging System (OCS)</li>
-        <li>Software Testing Management</li>
-        <li>Network Management Services (NMS) NETACT</li>
-        <li>SUN SOLARIS Administration</li>
-        <li>GSM & 3G WCDMA</li>
-        <li>SS7, TCP/IP, UNIX</li>
-        <li>RAN, BTS, and BSC</li>
-        <li>WCDMA from Huawei</li>
-        <li>Circuit Switch – MSOFTX3000 from Huawei</li>
-        <li>Intelligent Network and Ring Back Tone (RBT) from Huawei</li>
-      </ul>
+    </div>
+  </section>
 
-      <hr style="margin: 30px auto; width: 50%; border: 1px solid #ccc;">
+  <!-- ===== WORKING JOURNEY SECTION ===== -->
+<section id="journey" class="section journey">
+  <div class="container">
+    <h2>Working & Learning Journey</h2>
 
-      <h3 style="text-align: center;">Languages</h3>
-      <ul style="max-width: 700px; margin: auto;">
-        <li><strong>Indonesian:</strong> Native</li>
-        <li><strong>English:</strong> Business Level</li>
-        <li><strong>Japanese:</strong> Intermediate (currently studying at TCJ Japanese Language School)</li>
-      </ul>
+    <table class="journey-table">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Organization / Company</th>
+          <th>Role / Position</th>
+        </tr>
+      </thead>
 
-      <hr style="margin: 30px auto; width: 50%; border: 1px solid #ccc;">
+      <tbody>
+        <tr>
+          <td>Oct 2025 – Now</td>
+          <td>RevoU – Full Stack Software Engineering Bootcamp</td>
+          <td>Software Engineering Student</td>
+        </tr>
 
-    </section>
+        <tr>
+          <td>Oct 2025 – Now</td>
+          <td>Halal Gourmet Japan (Moving Squad Inc.)</td>
+          <td>Content Creator • Consultant • Talent</td>
+        </tr>
 
-    <hr style="margin: 40px 0;">
+        <tr>
+          <td>Mar 2019 – Now</td>
+          <td>Young Living</td>
+          <td>Brand Partner</td>
+        </tr>
 
-    <!-- ===== CONTACT ME ===== -->
-    <section id="contact" style="text-align: center; margin-bottom: 60px;">
-      <h2>Contact Me ✉️</h2>
-      <form style="max-width: 500px; margin: auto; text-align: left;">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required style="width:100%; padding:8px;"><br><br>
+        <tr>
+          <td>Feb 2016 – Apr 2020</td>
+          <td>Lionbridge (acquired by Appen)</td>
+          <td>Social Media Evaluator</td>
+        </tr>
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required style="width:100%; padding:8px;"><br><br>
+        <tr>
+          <td>Jun 2012 – Oct 2016</td>
+          <td>Amdocs Indonesia</td>
+          <td>Senior Subject Matter Expert</td>
+        </tr>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" required style="width:100%; padding:8px; height:120px;"></textarea><br><br>
+        <tr>
+          <td>Jul 2007 – Aug 2011</td>
+          <td>Nokia Siemens Networks (now Nokia)</td>
+          <td>Solution Engineer</td>
+        </tr>
 
-        <button type="submit" style="background:#111; color:white; border:none; padding:10px 20px; cursor:pointer;">Send</button>
-      </form>
-    </section>
-  </main>
+        <tr>
+          <td>Jun 2006 – Jul 2007</td>
+          <td>PT. PCCW Cascade for Huawei Managed Services</td>
+          <td>IN & RBT Engineer</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cv-download">
+  <p>For a detailed overview of my experience, please download my CV
+     <a href="assets/documents/CV%20Lia%20Rosliany%202.pdf" download>
+       here
+     </a>.
+  </p>
+</div>
+</section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer style="background-color:#111; color:white; text-align:center; padding:20px;">
-    <p>© 2025 Lia Rosliany. All Rights Reserved.</p>
-  </footer>
+<!-- ===== COMPANIES SECTION ===== -->
+<section id="companies" class="section companies">
+  <div class="container">
+    <h2>Where I’ve Worked & Studied</h2>
+
+    <div class="company-grid">
+
+      <!-- Row 1 -->
+      <figure>
+        <a href="https://revou.co/" target="_blank">
+          <img src="assets/logo/revou.png" alt="RevoU">
+        </a>
+        <figcaption>RevoU</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://halalgourmet.jp/" target="_blank">
+          <img src="assets/logo/hgj.png" alt="Halal Gourmet Japan">
+        </a>
+        <figcaption>Halal Gourmet Japan</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://tcj-education.com/" target="_blank">
+          <img src="assets/logo/tcj.png" alt="Tokyo Central Japanese Language School">
+        </a>
+        <figcaption>TCJ Language School</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.youngliving.com/" target="_blank">
+          <img src="assets/logo/yl.png" alt="Young Living">
+        </a>
+        <figcaption>Young Living</figcaption>
+      </figure>
+
+      <!-- Row 2 -->
+      <figure>
+        <a href="https://www.telkomsel.com/" target="_blank">
+          <img src="assets/logo/telkomsel.png" alt="Telkomsel">
+        </a>
+        <figcaption>Telkomsel</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.amdocs.com/" target="_blank">
+          <img src="assets/logo/amdocs.png" alt="Amdocs">
+        </a>
+        <figcaption>Amdocs Indonesia</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://indosatooredoo.com/" target="_blank">
+          <img src="assets/logo/indosat.png" alt="Indosat Ooredoo">
+        </a>
+        <figcaption>Indosat Ooredoo</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.xl.co.id/" target="_blank">
+          <img src="assets/logo/xl.jpeg" alt="XL Axiata">
+        </a>
+        <figcaption>XL Axiata</figcaption>
+      </figure>
+
+      <!-- Row 3 -->
+      <figure>
+        <a href="https://www.nokia.com/" target="_blank">
+          <img src="assets/logo/nokia.png" alt="Nokia">
+        </a>
+        <figcaption>Nokia</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.huawei.com/" target="_blank">
+          <img src="assets/logo/huawei.png" alt="Huawei">
+        </a>
+        <figcaption>Huawei</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://www.pccw.com/" target="_blank">
+          <img src="assets/logo/pccw.png" alt="PCCW Cascade">
+        </a>
+        <figcaption>PCCW Cascade</figcaption>
+      </figure>
+
+      <figure>
+        <a href="https://telkomuniversity.ac.id/" target="_blank">
+          <img src="assets/logo/telu.png" alt="Telkom University">
+        </a>
+        <figcaption>Telkom University</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT SECTION ===== -->
+<section id="contact" class="section contact">
+  <div class="container contact-container">
+    
+    <h2>Contact Me</h2>
+    <p class="contact-sub">Feel free to reach out for collaborations, freelance work, or just to say hello!</p>
+
+    <form class="contact-form">
+
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required placeholder="Your name">
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required placeholder="your@email.com">
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+      <div class="contact-buttons">
+        <button type="submit" class="btn-send">Send</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+
+    </form>
+
+  </div>
+</section>
+
 
 </body>
+
+<footer class="site-footer">
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/lia-rosliany" target="_blank" rel="noopener">
+      <img src="assets/icons/linkedin.png" alt="LinkedIn">
+    </a>
+    <a href="https://github.com/liaro" target="_blank" rel="noopener">
+      <img src="assets/icons/github.png" alt="GitHub">
+    </a>
+    <a href="https://www.instagram.com/halalgourmetjapan" target="_blank" rel="noopener">
+      <img src="assets/icons/instagram.png" alt="Instagram">
+    </a>
+  </div>
+
+  <p class="copyright">Copyright © 2025 Lia Rosliany. All Rights Reserved.</p>
+</footer>
+
 </html>
