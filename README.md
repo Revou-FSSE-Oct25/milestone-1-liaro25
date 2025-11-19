@@ -1,28 +1,146 @@
-> THIS ASSIGNMENT IS PUBLISHED AT 21TH NOVEMBER 2025
-## Deployment
-The site will be published on below link 
-Link: [https://revou-fsse-oct25.github.io/milestone-1-liaro25/]
+# 🌐 Personal Website — Lia Rosliany
 
-> THIS ASSIGNMENT IS PUBLISHED AT 6TH NOVEMBER 2025
-# Assignment Website — Lia Rosliany
+Milestone 1 & Module 2 – RevoU FSSE Oct 2025
 
-## Overview
-Bismillah this is my first website making for RevoU’s Software Engineering Program assignment. 
-The goal is to create a simple personal Curriculum Vitae Website using **HTML**.
+This project is a personal website built as part of the Milestone assignments for RevoU Full Stack Software Engineering program.  
+Module 1 focused on HTML structure, while Module 2 enhances the UI/UX using CSS (vanilla CSS, no framework).
 
-## Features
-- 4 main sections: 
-- Home, About, Working Journey, Companies I've worked with/for and Schools I attend, Projects and Contact  
+Live Website: **https://revou-fsse-oct25.github.io/milestone-1-liaro25/**  
+Repository: **https://github.com/revou-FSSE-Oct25/milestone-1-liaro25/**
 
-## Deployment
-The site will be published on GitHub Pages.  
-Link: [https://github.com/Revou-FSSE-Oct25/milestone-1-liaro25]
+---
 
-## FOLLOWING IS README.md WITH MORE DETAILED EXPLANATIONS AND CHANGES MADE ACCORDING TO TEAM LEADER FEEDBACK
-<strong>TL FEEDBACK<strong/>
-- Footer element placed outside `<body>` tag (lines 311-325) - DONE 12 NOV '25
-- Link points to GitHub repository,  not the deployed site - DONE 12 NOV '25
-- Git commit practices not following conventional commits,  inconsistent capitalization,  mixed languages,  vague messages ("update the latest README.md" - what was updated?) - STARTING 12 NOV'25
-- Enhancement opportunities (meta tags,  favicon,  <main> tag) - STARTING 12 NOV'25
+## 📌 **Overview**
 
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/KTVBmApB)
+This personal website represents my resume, professional journey, projects, and contact information.  
+The website aims to:
+
+- Present my experience and profile in a clean and structured way
+- Display information in visually appealing sections
+- Apply responsive design and accessibility best practices
+- Serve as a base for future updates to my personal portfolio
+
+---
+
+## ✨ **Features Implemented (Module 2 CSS)**
+
+### 🎨 **CSS Styling Improvements**
+
+- Hero section with gradient background
+- Responsive layout using Flexbox & Grid
+- Updated typography hierarchy (H1–H3, paragraph styling)
+- Color palette using CSS variables for consistency
+- Styled navigation bar & footer
+- Hover animations for links and buttons
+- Clean UI with better spacing and section separation
+- Icons and images styled with proper sizing & responsiveness
+
+### 📱 **Responsive Design**
+
+- Layout adjusts across mobile, tablet, and desktop
+- Media queries applied at multiple breakpoints
+- Images scale properly using `max-width`, `height: auto`, and responsive containers
+- Text alignment and spacing shift dynamically based on screen size
+
+### ♿ **Accessibility Enhancements**
+
+- Added `aria-label` to navigation and footer social icons
+- All images include descriptive `alt` text
+- Buttons and input fields include focus states
+- Improved semantic HTML structure
+
+### 📝 **Contact Page Styling**
+
+- Styled input fields and textareas
+- Responsive form layout
+- Button design consistent with site theme
+- Improved accessibility and usability
+
+### 📌 **Additional Improvements**
+
+- Favicon added
+- Organized file structure (`/assets`, `/css`)
+- README updated with all features for Module 2
+
+---
+
+## 🗂️ **Pages Included**
+
+- **Home** — Hero, introduction, and highlight sections
+- **About Me** — Biography & background with flex/grid layout
+- **Journey** — Work history, achievements, and timeline
+- **Projects** — Project cards with hover effects
+- **Contact** — Form with styled fields and responsive layout
+
+---
+
+## 🛠️ **Tech Stack**
+
+| Category            | Details                                     |
+| ------------------- | ------------------------------------------- |
+| **Languages**       | HTML5, CSS3                                 |
+| **Styling Tools**   | Flexbox, Grid, CSS Variables, Media Queries |
+| **Hosting**         | GitHub Pages                                |
+| **Version Control** | Git & GitHub                                |
+| **Design Tool**     | Figma                                       |
+
+---
+
+## 📷 **Screenshots**
+
+_(Update after finishing CSS — optional)_
+
+```
+![Homepage Screenshot](assets/screenshots/home.png)
+![About Screenshot](assets/screenshots/about.png)
+```
+
+---
+
+## 📁 **Project Structure**
+
+```
+milestone-1-liaro25/
+│
+├── index.html
+├── about.html
+├── journey.html
+├── projects.html
+├── contact.html
+│
+├── css/
+│   └── style.css
+│
+├── assets/
+│   ├── images/
+│   ├── logos/
+│   └── favicon.png
+│
+└── README.md
+```
+
+---
+
+## 🚀 **How to Run Locally**
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/revou-FSSE-Oct25/milestone-1-liaro25.git
+   ```
+2. Open any `.html` file in your browser
+3. Or use VS Code with Live Server extension
+
+---
+
+## 📌 **Future Enhancements**
+
+- Adding JavaScript interactions
+- Animations for smoother UI transitions
+- More projects in the Projects section
+- Dark mode option
+
+---
+
+## 🙌 Credits
+
+Created as part of **RevoU Full Stack Software Engineering Program (Oct 2025)**.
