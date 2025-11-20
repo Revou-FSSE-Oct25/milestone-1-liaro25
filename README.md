@@ -24,6 +24,10 @@ The website aims to:
 
 ## ✨ **Features Implemented (Module 2 CSS)**
 
+### 🖊️ Design Process
+
+The layout for the Home, About, and Projects pages was first designed in Figma before being implemented in code. This helped ensure a clear visual structure and consistent styling across the website.
+
 ### 🎨 **CSS Styling Improvements**
 
 - Hero section with gradient background
@@ -143,4 +147,4 @@ milestone-1-liaro25/
 
 ## 🙌 Credits
 
-Created as part of **RevoU Full Stack Software Engineering Program (Oct 2025)**.
+Created by Lia Rosliany as part of **RevoU Full Stack Software Engineering Program (Oct 2025)**.
