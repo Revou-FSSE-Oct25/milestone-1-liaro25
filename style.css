@@ -108,10 +108,6 @@ p {
 /*             GLIMPSES SECTION             */
 /* ======================================== */
 
-/* ======================================== */
-/*             GLIMPSES SECTION             */
-/* ======================================== */
-
 .glimpses {
   padding: 3rem 1.5rem;
   background: #ffffff;
@@ -162,26 +158,36 @@ p {
 
 /* Image placeholder box */
 .glimpse-image {
-  flex: 0 0 320px;
-  height: 210px;
-  border-radius: 18px;
-  background: linear-gradient(135deg, #5bbce3, #89c4a1, #f2dc8a);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  flex: 0 0 260px;
+  aspect-ratio: 4 / 3;
+  border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px 100px; 
 }
 
-/* Each box had different colours */
+/* Each box had different icons */
 .about-image {
-  background: linear-gradient(135deg, #fef7da, #f2dc8a);
+  background-color: #fef7da;
+  background-image: url("assets/icons/about.png");
 }
+
 .journey-image {
-  background: linear-gradient(135deg, #ddf7e8, #89c4a1);
+  background-color: #ddf7e8;
+  background-image: url("assets/icons/journey.png");
 }
+
 .projects-image {
-  background: linear-gradient(135deg, #e3f1ff, #5bbce3);
+  background-color: #e3f1ff;
+  background-image: url("assets/icons/projects.png");
 }
+
 .contact-image {
-  background: linear-gradient(135deg, #ffe7f1, #f2c6de);
+  background-color: #ffe7f1;
+  background-image: url("assets/icons/contact.png");
 }
+
 
 /* Responsive in mobile it will become vertical */
 @media (max-width: 768px) {
