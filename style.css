@@ -86,9 +86,9 @@ p {
   margin: 0;
 
   display: flex;
-  gap: 2rem;     /* jarak antar menu */
+  gap: 2rem;     /* gap between menu */
   justify-content: center;
-  flex-wrap: wrap; /* biar responsif */
+  flex-wrap: wrap; /* responsive */
 }
 
 .hero-nav a {
@@ -203,6 +203,74 @@ p {
   }
 }
 
+/* ============================= */
+/*            ABOUT PAGE         */
+/* ============================= */
+
+/* base section & container */
+.section {
+  padding: 3.5rem 1.5rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* grid 2 kolom: foto + teks */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+
+/* set pictures in the left */
+.about-photo {
+  width: 100%;
+  max-width: 320px;        
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* About Me Title */
+
+.about-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+
+/* Right text */
+
+.about-text h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.about-text strong {
+  font-weight: 600;
+}
+
+/* responsive: di HP jadi 1 kolom */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-photo {
+    max-width: 260px;
+    margin: 0 auto 1.5rem;
+  }
+}
 
 
 /* ========================== */
@@ -220,7 +288,6 @@ p {
   color: #111;   
   text-align: center;
   padding: 30px 16px 45px;
-  
   font-family: "Quicksand", sans-serif;
 }
 
