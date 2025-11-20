@@ -272,6 +272,169 @@ p {
   }
 }
 
+/* ============================= */
+/*           JOURNEY PAGE        */
+/* ============================= */
+
+.journey {
+  background: #ffffff;
+  padding: 3.5rem 1.5rem;
+}
+
+.journey h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Table */
+.journey-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  color: #333;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.journey-table thead {
+  background: #f1f7ff;
+}
+
+.journey-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #222;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.journey-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.journey-table tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.journey-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Download CV text */
+.cv-download {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.cv-download a {
+  font-weight: 600;
+  color: #1e40af;
+  text-decoration: none;
+}
+
+.cv-download a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .journey-table thead {
+    display: none;
+  }
+
+  .journey-table tr {
+    display: block;
+    margin-bottom: 1.2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  }
+
+  .journey-table td {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.4rem 0;
+    border: none;
+  }
+
+  .journey-table td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #555;
+  }
+}
+
+/* ============================= */
+/*         COMPANIES GRID        */
+/* ============================= */
+
+.companies {
+  padding: 3.5rem 1.5rem 4rem;
+}
+
+.companies h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 kolom di desktop */
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+}
+
+/* Logo */
+.company-grid img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  filter: grayscale(25%);
+  transition: 0.25s ease;
+}
+
+.company-grid img:hover {
+  transform: scale(1.12);
+  filter: grayscale(0);
+}
+
+/* Caption */
+.company-grid figcaption {
+  font-size: 0.9rem;
+  color: #444;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* Medium device: tablet */
+@media (max-width: 992px) {
+  .company-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per baris */
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .company-grid {
+    grid-template-columns: 1fr; /* 1 per baris */
+  }
+
+  .company-grid img {
+    width: 90px;
+    height: 90px;
+  }
+}
+
 
 /* ========================== */
 /*           FOOTER           */
