@@ -1,41 +1,34 @@
-/* ======================== */
-/*         TYPOGRAPHY        */
-/* ======================== */
+/* ============================================================ */
+/*                        GLOBAL TYPOGRAPHY                     */
+/* ============================================================ */
 
 body {
-    font-family: "Quicksand", sans-serif;
-    font-weight: 400;
-    line-height: 1.6;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #222;
 }
 
-h1 {
-    font-weight: 700;
-}
-
-h2 {
-    font-weight: 600;
-}
-
-h3 {
-    font-weight: 600;
+h1, h2, h3 {
+  font-weight: 700;
+  margin: 0;
 }
 
 p {
-    font-weight: 400;
+  font-weight: 400;
+  margin: 0;
 }
 
 
-/* ============================= */
-/*          HERO SECTION         */
-/* ============================= */
+/* ============================================================ */
+/*                           HERO SECTION                       */
+/* ============================================================ */
 
 .hero {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
   padding: 4rem 1.5rem;
-
+  text-align: center;
   background: linear-gradient(
     90deg,
     rgba(91, 188, 227, 1) 0%,
@@ -46,57 +39,49 @@ p {
 
 .hero-inner {
   max-width: 900px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .hero-eyebrow {
-  letter-spacing: 1px;
   font-size: 0.9rem;
   text-transform: uppercase;
   color: #333;
   margin-bottom: 1rem;
+  letter-spacing: 1px;
 }
 
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
   color: #111;
+  margin-bottom: 0.8rem;
 }
 
 .hero-subtitle {
   font-size: 1.1rem;
   color: #333;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 
-/* ========================================= */
-/*              HERO NAVIGATION              */
-/* ========================================= */
-
-.hero-nav {
-  margin-top: 1.5rem;
-}
+/* ============================================================ */
+/*                        HERO NAVIGATION                       */
+/* ============================================================ */
 
 .hero-nav ul {
+  display: flex;
+  gap: 2rem;
   list-style: none;
+  justify-content: center;
   padding: 0;
   margin: 0;
-
-  display: flex;
-  gap: 2rem;     /* gap between menu */
-  justify-content: center;
-  flex-wrap: wrap; /* responsive */
 }
 
 .hero-nav a {
+  font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 600;
   color: #111;
-  transition: color 0.2s ease;
 }
 
 .hero-nav a:hover {
@@ -104,59 +89,55 @@ p {
   text-decoration: underline;
 }
 
-/* ======================================== */
-/*             GLIMPSES SECTION             */
-/* ======================================== */
+
+/* ============================================================ */
+/*                       GLIMPSE SECTION                        */
+/* ============================================================ */
 
 .glimpses {
   padding: 3rem 1.5rem;
-  background: #ffffff;
+  background: #fff;
 }
 
 .glimpses-inner {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
-/* each glimpse : text + image */
 .glimpse-row {
   display: flex;
   align-items: center;
   gap: 2.5rem;
 }
 
-/* Differentiate between even glimpse card and odd glimpse card */
 .glimpses-inner .glimpse-row:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* Text block */
 .glimpse-text h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
 }
 
 .glimpse-text p {
+  margin-bottom: 1rem;
   color: #444;
-  margin-bottom: 1.1rem;
-  line-height: 1.5;
 }
 
 .glimpse-link {
+  text-decoration: none;
   font-weight: 600;
   color: #1e40af;
-  text-decoration: none;
 }
 
 .glimpse-link:hover {
   text-decoration: underline;
 }
 
-/* Image placeholder box */
 .glimpse-image {
   flex: 0 0 260px;
   aspect-ratio: 4 / 3;
@@ -164,103 +145,65 @@ p {
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100px 100px; 
+  background-size: 100px;
 }
 
-/* Each box had different icons */
-.about-image {
-  background-color: #fef7da;
-  background-image: url("assets/icons/about.png");
-}
-
-.journey-image {
-  background-color: #ddf7e8;
-  background-image: url("assets/icons/journey.png");
-}
-
-.projects-image {
-  background-color: #e3f1ff;
-  background-image: url("assets/icons/projects.png");
-}
-
-.contact-image {
-  background-color: #ffe7f1;
-  background-image: url("assets/icons/contact.png");
-}
+.about-image { background: #fef7da url("assets/icons/about.png") center/100px no-repeat; }
+.journey-image { background: #ddf7e8 url("assets/icons/journey.png") center/100px no-repeat; }
+.projects-image { background: #e3f1ff url("assets/icons/projects.png") center/100px no-repeat; }
+.contact-image { background: #ffe7f1 url("assets/icons/contact.png") center/100px no-repeat; }
 
 
-/* Responsive in mobile it will become vertical */
 @media (max-width: 768px) {
   .glimpse-row,
   .glimpses-inner .glimpse-row:nth-child(even) {
     flex-direction: column;
     align-items: flex-start;
   }
-
-  .glimpse-image {
-    width: 100%;
-    flex: 0 0 auto;
-  }
 }
 
-/* ============================= */
-/*            ABOUT PAGE         */
-/* ============================= */
 
-/* base section & container */
+/* ============================================================ */
+/*                        ABOUT PAGE                            */
+/* ============================================================ */
+
 .section {
   padding: 3.5rem 1.5rem;
 }
 
 .container {
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto;
 }
 
-/* grid 2 kolom: foto + teks */
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 320px) 1fr;
   gap: 2.5rem;
-  align-items: flex-start;
 }
 
-/* set pictures in the left */
 .about-photo {
   width: 100%;
-  max-width: 320px;        
   border-radius: 24px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.1);
   object-fit: cover;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
-
-/* About Me Title */
-
-.about-title {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-
-
-/* Right text */
 
 .about-text h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .about-text p {
   margin-bottom: 1rem;
-  line-height: 1.7;
   color: #333;
+  line-height: 1.7;
 }
 
 .about-text strong {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-/* responsive: di HP jadi 1 kolom */
 @media (max-width: 768px) {
   .about-grid {
     grid-template-columns: 1fr;
@@ -268,80 +211,50 @@ p {
 
   .about-photo {
     max-width: 260px;
-    margin: 0 auto 1.5rem;
+    margin: auto;
   }
 }
 
-/* ============================= */
-/*           JOURNEY PAGE        */
-/* ============================= */
+
+/* ============================================================ */
+/*                        JOURNEY PAGE                          */
+/* ============================================================ */
 
 .journey {
-  background: #ffffff;
   padding: 3.5rem 1.5rem;
 }
 
 .journey h2 {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
-/* Table */
 .journey-table {
   width: 100%;
-  border-collapse: collapse;
   margin-bottom: 2rem;
-  font-size: 1rem;
-  color: #333;
-  background: #fff;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.07);
-  border-radius: 16px;
+  border-collapse: collapse;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
   overflow: hidden;
+  border-radius: 16px;
 }
 
 .journey-table thead {
-  background: #f1f7ff;
+  background: #eef5ff;
 }
 
-.journey-table th {
+.journey-table th,
+.journey-table td {
   padding: 1rem;
-  text-align: left;
-  font-weight: 600;
-  color: #222;
   border-bottom: 1px solid #e5e5e5;
 }
 
-.journey-table td {
-  padding: 1rem;
-  border-bottom: 1px solid #eee;
-}
-
 .journey-table tbody tr:nth-child(odd) {
-  background-color: #fafafa;
+  background: #fafafa;
 }
 
-.journey-table tbody tr:last-child td {
-  border-bottom: none;
-}
 
-/* Download CV text */
-.cv-download {
-  margin-top: 0.5rem;
-  font-size: 0.95rem;
-}
-
-.cv-download a {
-  font-weight: 600;
-  color: #1e40af;
-  text-decoration: none;
-}
-
-.cv-download a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive table */
+/* --- Responsive Table --- */
 @media (max-width: 768px) {
   .journey-table thead {
     display: none;
@@ -350,16 +263,14 @@ p {
   .journey-table tr {
     display: block;
     margin-bottom: 1.2rem;
-    background: #fff;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
   }
 
   .journey-table td {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     padding: 0.4rem 0;
     border: none;
   }
@@ -371,35 +282,32 @@ p {
   }
 }
 
-/* ============================= */
-/*         COMPANIES GRID        */
-/* ============================= */
+
+/* ============================================================ */
+/*                        COMPANIES GRID                        */
+/* ============================================================ */
 
 .companies {
-  padding: 3.5rem 1.5rem 4rem;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .companies h2 {
   font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 2rem;
-  text-align: left;
+  margin-bottom: 1.8rem;
 }
 
 .company-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 kolom di desktop */
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  align-items: center;
   justify-items: center;
 }
 
-/* Logo */
 .company-grid img {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
-  filter: grayscale(25%);
+  filter: grayscale(30%);
   transition: 0.25s ease;
 }
 
@@ -408,129 +316,89 @@ p {
   filter: grayscale(0);
 }
 
-/* Caption */
-.company-grid figcaption {
-  font-size: 0.9rem;
-  color: #444;
-  margin-top: 0.5rem;
-  text-align: center;
-}
-
-/* Medium device: tablet */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
   .company-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 per baris */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .company-grid {
-    grid-template-columns: 1fr; /* 1 per baris */
-  }
-
-  .company-grid img {
-    width: 90px;
-    height: 90px;
+    grid-template-columns: 1fr;
   }
 }
 
-/* ============================= */
-/*           CONTACT PAGE        */
-/* ============================= */
+
+/* ============================================================ */
+/*                        CONTACT PAGE                          */
+/* ============================================================ */
 
 .contact-container {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem;
+  margin: auto;
+  padding: 3.5rem 1.5rem;
 }
 
 .contact h2 {
   font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: #222;
+  margin-bottom: 0.8rem;
 }
 
 .contact-sub {
   margin-bottom: 2rem;
-  color: #555;
   font-size: 1.05rem;
-  line-height: 1.6;
+  color: #555;
 }
 
-/* Form layout */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 1.4rem;
 }
 
-.contact-form label {
-  font-weight: 600;
-  font-size: 0.95rem;
-  color: #333;
-}
-
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
   padding: 1rem 1.2rem;
-  border: 1px solid #e0e0e0;
-  border-radius: 14px;
-  font-size: 1rem;
-  font-family: inherit;
+  border: 1px solid #ddd;
   background: #fafafa;
-  transition: all 0.25s ease;
+  border-radius: 14px;
+  font-family: inherit;
 }
 
-/* Input focus effect */
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
   border-color: #7ab5e4;
   background: #fff;
-  box-shadow: 0 0 0 4px rgba(122, 181, 228, 0.25);
+  box-shadow: 0 0 0 4px rgba(122,181,228,0.25);
 }
 
-/* Buttons */
 .contact-buttons {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
 
+.btn-send,
+.btn-reset {
+  padding: 0.9rem 1.6rem;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+}
+
 .btn-send {
   background: #1e40af;
   color: #fff;
-  padding: 0.9rem 1.6rem;
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.btn-send:hover {
-  background: #183489;
 }
 
 .btn-reset {
-  background: #f3f3f3;
+  background: #eee;
   color: #333;
-  padding: 0.9rem 1.6rem;
-  border: none;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.2s ease;
 }
 
-.btn-reset:hover {
-  background: #e7e7e7;
-}
-
-/* Mobile layout */
 @media (max-width: 600px) {
   .contact-buttons {
     flex-direction: column;
@@ -543,25 +411,21 @@ p {
 }
 
 
-/* ========================== */
-/*           FOOTER           */
-/* ========================== */
+/* ============================================================ */
+/*                            FOOTER                            */
+/* ============================================================ */
 
 .site-footer {
+  padding: 30px 16px 45px;
   background: linear-gradient(
     90deg,
-    rgba(242, 220, 138, 1) 0%,     
+    rgba(242, 220, 138, 1) 0%,
     rgba(137, 196, 161, 1) 50%,
     rgba(91, 188, 227, 1) 100%
   );
-  
-  color: #111;   
   text-align: center;
-  padding: 30px 16px 45px;
-  font-family: "Quicksand", sans-serif;
 }
 
-/* Social icons */
 .site-footer .socials {
   display: flex;
   justify-content: center;
@@ -569,29 +433,12 @@ p {
   margin-bottom: 16px;
 }
 
-.site-footer .socials a {
-  text-decoration: none;
-  line-height: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform .2s ease, opacity .2s ease;
-}
-
 .site-footer .socials img {
   width: 32px;
   height: 32px;
 }
 
-.site-footer .socials a:hover {
-  transform: scale(1.08) translateY(-2px);
-  opacity: 0.85;
-}
-
-/* Copyright */
 .site-footer .copyright {
   font-size: 0.95rem;
-  font-weight: 500;
-  margin-top: 6px;
-  color: #111;
+  font-weight: 600;
 }
