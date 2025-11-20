@@ -9,9 +9,12 @@ body {
   margin: 0;
   padding: 0;
   color: #222;
+  background: #f9f6f2;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   margin: 0;
 }
@@ -20,7 +23,6 @@ p {
   font-weight: 400;
   margin: 0;
 }
-
 
 /* ============================================================ */
 /*                           HERO SECTION                       */
@@ -42,19 +44,11 @@ p {
   margin: auto;
 }
 
-.hero-eyebrow {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #333;
-  margin-bottom: 1rem;
-  letter-spacing: 1px;
-}
-
 .hero-title {
   font-size: 3rem;
   font-weight: 800;
   color: #111;
-  margin-bottom: 0.8rem;
+  margin-bottom: 2rem;
 }
 
 .hero-subtitle {
@@ -62,7 +56,6 @@ p {
   color: #333;
   margin-bottom: 2.5rem;
 }
-
 
 /* ============================================================ */
 /*                        HERO NAVIGATION                       */
@@ -78,6 +71,7 @@ p {
 }
 
 .hero-nav a {
+  margin-top: 2rem;
   font-weight: 600;
   text-decoration: none;
   font-size: 1rem;
@@ -88,7 +82,6 @@ p {
   color: #333;
   text-decoration: underline;
 }
-
 
 /* ============================================================ */
 /*                       GLIMPSE SECTION                        */
@@ -148,11 +141,18 @@ p {
   background-size: 100px;
 }
 
-.about-image { background: #fef7da url("assets/icons/about.png") center/100px no-repeat; }
-.journey-image { background: #ddf7e8 url("assets/icons/journey.png") center/100px no-repeat; }
-.projects-image { background: #e3f1ff url("assets/icons/projects.png") center/100px no-repeat; }
-.contact-image { background: #ffe7f1 url("assets/icons/contact.png") center/100px no-repeat; }
-
+.about-image {
+  background: #fef7da url("assets/icons/about.png") center/100px no-repeat;
+}
+.journey-image {
+  background: #ddf7e8 url("assets/icons/journey.png") center/100px no-repeat;
+}
+.projects-image {
+  background: #e3f1ff url("assets/icons/projects.png") center/100px no-repeat;
+}
+.contact-image {
+  background: #ffe7f1 url("assets/icons/contact.png") center/100px no-repeat;
+}
 
 @media (max-width: 768px) {
   .glimpse-row,
@@ -161,7 +161,6 @@ p {
     align-items: flex-start;
   }
 }
-
 
 /* ============================================================ */
 /*                        ABOUT PAGE                            */
@@ -222,7 +221,6 @@ p {
   }
 }
 
-
 /* ============================================================ */
 /*                        JOURNEY PAGE                          */
 /* ============================================================ */
@@ -260,7 +258,6 @@ p {
   background: #fafafa;
 }
 
-
 /* --- Responsive Table --- */
 @media (max-width: 768px) {
   .journey-table thead {
@@ -272,7 +269,7 @@ p {
     margin-bottom: 1.2rem;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
   }
 
   .journey-table td {
@@ -288,7 +285,6 @@ p {
     color: #555;
   }
 }
-
 
 /* ============================================================ */
 /*                        COMPANIES GRID                        */
@@ -335,7 +331,6 @@ p {
   }
 }
 
-
 /* ============================================================ */
 /*                        CONTACT PAGE                          */
 /* ============================================================ */
@@ -378,7 +373,7 @@ p {
   outline: none;
   border-color: #7ab5e4;
   background: #fff;
-  box-shadow: 0 0 0 4px rgba(122,181,228,0.25);
+  box-shadow: 0 0 0 4px rgba(122, 181, 228, 0.25);
 }
 
 .contact-buttons {
@@ -424,8 +419,8 @@ p {
 /* PROJECT PAGE */
 
 .projects .container {
-  max-width: 56rem;          /* lebar maksimum card */
-  margin: 0 auto;            /* card di tengah */
+  max-width: 56rem; /* lebar maksimum card */
+  margin: 0 auto; /* card di tengah */
   padding: 3rem 1.5rem 4rem; /* ruang atas & bawah */
 }
 
@@ -447,9 +442,9 @@ p {
 /* VIDEO — ukuran sedang & tetap 16:9 */
 .video-wrapper {
   position: relative;
-  max-width: 42rem;      /* 👉 atur besar-kecil video di sini */
-  margin: 0 auto 2rem;   /* tengah + jarak ke caption */
-  aspect-ratio: 16 / 9;  /* jaga rasio 16:9 */
+  max-width: 42rem; /* ideal size for youtube video */
+  margin: 0 auto 2rem; /* in the center */
+  aspect-ratio: 16 / 9; /* jaga rasio 16:9 */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -461,16 +456,15 @@ p {
   border: none;
 }
 
-/* Caption rapi di tengah */
+/* Caption in the middle */
 .project-caption {
-  max-width: 42rem;      /* sama lebar dengan video */
+  max-width: 42rem; /* same width with video */
   margin: 0 auto;
   font-size: 1.05rem;
   color: #444;
   line-height: 1.75;
   text-align: justify;
 }
-
 
 /* ============================================================ */
 /*                            FOOTER                            */
