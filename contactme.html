@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Lia Rosliany</title>
+    <meta
+      name="description"
+      content="Contact Lia Rosliany for collaborations, freelance work, or questions."
+    />
+    <meta name="author" content="Lia Rosliany" />
+
+    <!-- Google Font Quicksand -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/icons/favicon-32x32.png"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+
+  <body>
+    <!-- Same Header like HomePage -->
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Lia Rosliany</h1>
+        <p class="hero-subtitle">Welcome to my personal website</p>
+
+        <nav class="hero-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/journey.html">Journey</a></li>
+            <li><a href="/projects.html">Projects</a></li>
+            <li><a href="/contactme.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- CONTACT SECTION -->
+      <section id="contact" class="section contact">
+        <div class="container contact-container">
+          <h2>Contact Me</h2>
+          <p class="contact-sub">
+            Feel free to reach out for collaborations, freelance work, or just
+            to say hello!
+          </p>
+          <form class="contact-form">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your name"
+            />
+
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your@email.com"
+            />
+
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              placeholder="Write your message here..."
+            ></textarea>
+
+            <div class="contact-buttons">
+              <button type="submit" class="btn-send">Send</button>
+              <button type="reset" class="btn-reset">Reset</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/lia-rosliany" target="_blank">
+          <img src="../assets/icons/linkedin.png" alt="LinkedIn" />
+        </a>
+        <a href="https://github.com/liaro" target="_blank">
+          <img src="../assets/icons/github.png" alt="GitHub" />
+        </a>
+        <a href="https://www.instagram.com/halalgourmetjapan" target="_blank">
+          <img src="../assets/icons/instagram.png" alt="Instagram" />
+        </a>
+      </div>
+      <p class="copyright">© 2025 Lia Rosliany. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
