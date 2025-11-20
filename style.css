@@ -435,6 +435,113 @@ p {
   }
 }
 
+/* ============================= */
+/*           CONTACT PAGE        */
+/* ============================= */
+
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.contact-sub {
+  margin-bottom: 2rem;
+  color: #555;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+/* Form layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contact-form label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: #fafafa;
+  transition: all 0.25s ease;
+}
+
+/* Input focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #7ab5e4;
+  background: #fff;
+  box-shadow: 0 0 0 4px rgba(122, 181, 228, 0.25);
+}
+
+/* Buttons */
+.contact-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.btn-send {
+  background: #1e40af;
+  color: #fff;
+  padding: 0.9rem 1.6rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-send:hover {
+  background: #183489;
+}
+
+.btn-reset {
+  background: #f3f3f3;
+  color: #333;
+  padding: 0.9rem 1.6rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn-reset:hover {
+  background: #e7e7e7;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .btn-send,
+  .btn-reset {
+    width: 100%;
+  }
+}
+
 
 /* ========================== */
 /*           FOOTER           */
