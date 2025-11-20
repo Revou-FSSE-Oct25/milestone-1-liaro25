@@ -108,6 +108,10 @@ p {
 /*             GLIMPSES SECTION             */
 /* ======================================== */
 
+/* ======================================== */
+/*             GLIMPSES SECTION             */
+/* ======================================== */
+
 .glimpses {
   padding: 3rem 1.5rem;
   background: #ffffff;
@@ -116,29 +120,33 @@ p {
 .glimpses-inner {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
-
-.glimpse-card {
-  background: #f7f7f7;
-  padding: 2rem;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+/* each glimpse : text + image */
+.glimpse-row {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
 }
 
-.glimpse-card h2 {
+/* Differentiate between even glimpse card and odd glimpse card */
+.glimpses-inner .glimpse-row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* Text block */
+.glimpse-text h2 {
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 0.6rem;
 }
 
-.glimpse-card p {
+.glimpse-text p {
   color: #444;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.1rem;
   line-height: 1.5;
 }
 
@@ -152,19 +160,43 @@ p {
   text-decoration: underline;
 }
 
-.glimpse-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+/* Image placeholder box */
+.glimpse-image {
+  flex: 0 0 320px;
+  height: 210px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #5bbce3, #89c4a1, #f2dc8a);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-@media (max-width: 600px) {
-  .glimpses {
-    padding: 2rem 1rem;
+/* Each box had different colours */
+.about-image {
+  background: linear-gradient(135deg, #fef7da, #f2dc8a);
+}
+.journey-image {
+  background: linear-gradient(135deg, #ddf7e8, #89c4a1);
+}
+.projects-image {
+  background: linear-gradient(135deg, #e3f1ff, #5bbce3);
+}
+.contact-image {
+  background: linear-gradient(135deg, #ffe7f1, #f2c6de);
+}
+
+/* Responsive in mobile it will become vertical */
+@media (max-width: 768px) {
+  .glimpse-row,
+  .glimpses-inner .glimpse-row:nth-child(even) {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .glimpse-card {
-    padding: 1.5rem;
+
+  .glimpse-image {
+    width: 100%;
+    flex: 0 0 auto;
   }
 }
+
 
 
 /* ========================== */
