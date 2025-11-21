@@ -89,7 +89,7 @@ The layout for the Home, About, and Projects pages was first designed in Figma b
 | **Design Tool**     | Figma                                       |
 | **AI**              | ChatGPT                                     |
 | **Font**            | Google Font                                 |
-| **Design**          | Figma                                       |
+| **Dev Tools**       | Visual Studio Code (Prettier, LiveServer)   |
 
 ---
 
@@ -153,21 +153,47 @@ The website is optimized for mobile using multiple targeted media queries for he
 
 ```
 milestone-1-liaro25/
-│
-├── index.html
+├── README.md
 ├── about.html
+├── assets
+│   ├── documents
+│   │   └── CV Lia Rosliany 2.pdf
+│   ├── icons
+│   │   ├── about.png
+│   │   ├── contact.png
+│   │   ├── favicon-32x32.png
+│   │   ├── github.png
+│   │   ├── instagram.png
+│   │   ├── journey.png
+│   │   ├── linkedin.png
+│   │   └── projects.png
+│   ├── images
+│   │   └── pasFoto.png
+│   └── logos
+│       ├── amdocs.png
+│       ├── hgj.png
+│       ├── huawei.png
+│       ├── indosat.png
+│       ├── nokia.png
+│       ├── pccw.png
+│       ├── revou.png
+│       ├── tcj.png
+│       ├── telkomsel.png
+│       ├── telu.png
+│       ├── xl.jpeg
+│       └── yl.png
+├── contactme.html
+├── index.html
 ├── journey.html
 ├── projects.html
-├── contactme.html
-├── style.css
-├── assets/
-│   ├── images/
-│   ├── logos/
-│   ├── icons/
-│   └── favicon.png
-│   └── screenshot.png
-│
-└── README.md
+├── screenshot
+│   ├── about.png
+│   ├── hero.png
+│   ├── journey.png
+│   ├── mobile.png
+│   └── project.png
+└── style.css
+
 ```
 
 ## 📌 **Future Enhancements**
