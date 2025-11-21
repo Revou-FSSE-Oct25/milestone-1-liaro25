@@ -83,6 +83,34 @@ p {
   text-decoration: underline;
 }
 
+@media (max-width: 600px) {
+  .hero-title {
+    font-size: 2.2rem; /* down to 3rem */
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-nav ul {
+    flex-direction: column; /* NAV become VERTIKAL */
+    gap: 1rem; /* gap kecil */
+    margin-top: 1rem;
+  }
+
+  .hero-nav a {
+    font-size: 0.95rem;
+    margin-top: 0; /* margin-top 2rem in desktop*/
+    padding: 0.4rem 0;
+  }
+
+  .hero {
+    padding: 2.5rem 1rem; /* lowering the height */
+  }
+}
+
 /* ============================================================ */
 /*                       GLIMPSE SECTION                        */
 /* ============================================================ */
@@ -419,9 +447,9 @@ p {
 /* PROJECT PAGE */
 
 .projects .container {
-  max-width: 56rem; /* lebar maksimum card */
-  margin: 0 auto; /* card di tengah */
-  padding: 3rem 1.5rem 4rem; /* ruang atas & bawah */
+  max-width: 56rem; /*  maksimum card width*/
+  margin: 0 auto; /* to make the card stay in the middle */
+  padding: 3rem 1.5rem 4rem; /* spaces up and down */
 }
 
 .project-feature-card {
@@ -431,7 +459,7 @@ p {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Title di tengah, selebar card */
+/* Making sure the title stay in the centre of project card */
 .project-feature-card .project-title {
   font-size: 2rem;
   font-weight: 700;
@@ -439,12 +467,12 @@ p {
   text-align: center;
 }
 
-/* VIDEO — ukuran sedang & tetap 16:9 */
+/* VIDEO — Youtube Standard Size 16:9 */
 .video-wrapper {
   position: relative;
   max-width: 42rem; /* ideal size for youtube video */
   margin: 0 auto 2rem; /* in the center */
-  aspect-ratio: 16 / 9; /* jaga rasio 16:9 */
+  aspect-ratio: 16 / 9; /* Ratio 16:9 */
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
