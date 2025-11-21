@@ -18,7 +18,7 @@ The website aims to:
 - Present my experience and profile in a clean and structured way
 - Display information in visually appealing sections
 - Apply responsive design and accessibility best practices
-- Serve as a base for future updates to my personal portfolio
+- Serve as a base for future updates to my personal portfolio and a growing website with more projects that may be uploaded as a showcase
 
 ---
 
@@ -87,17 +87,65 @@ The layout for the Home, About, and Projects pages was first designed in Figma b
 | **Hosting**         | GitHub Pages                                |
 | **Version Control** | Git & GitHub                                |
 | **Design Tool**     | Figma                                       |
+| **AI**              | ChatGPT                                     |
+| **Font**            | Google Font                                 |
+| **Design**          | Figma                                       |
 
 ---
 
-## 📷 **Screenshots**
+## 📸 Screenshots
 
-_(Update after finishing CSS — optional)_
+Below are several screenshots showcasing the CSS implementation across the website, including gradient backgrounds, Flexbox, Grid layouts, card designs, and responsive behavior.
 
-```
-![Homepage Screenshot](assets/screenshots/home.png)
-![About Screenshot](assets/screenshots/about.png)
-```
+---
+
+### 🎨 **Hero Section (CSS Gradient Background)**
+
+The hero uses a custom CSS gradient. Gradients can be explored and generated here:  
+🔗 https://cssgradient.io/
+
+<p>
+  <img src="screenshot/hero.png" width="450">
+</p>
+
+---
+
+### 🧩 **Flexbox Layout (Homepage – Glimpse Section)**
+
+The homepage uses Flexbox to structure the icon + text glimpse cards in a responsive horizontal layout.
+
+<p>
+  <img src="screenshot/about.png" width="450">
+</p>
+
+---
+
+### 🧱 **CSS Grid Layout (Journey – Companies Section)**
+
+The companies section uses CSS Grid, adapting from 4 columns → 2 columns → 1 column depending on screen size.
+
+<p>
+  <img src="screenshot/journey.png" width="450">
+</p>
+---
+
+### 📺 **Card Component (Featured Project)**
+
+The Projects page uses a card-style container with shadow, padding, and a fully responsive embedded YouTube video.
+
+<p>
+  <img src="screenshot/project.png" width="450">
+</p>
+
+---
+
+### 📱 **Responsive Mobile View**
+
+The website is optimized for mobile using multiple targeted media queries for hero, navigation, grids, tables, and overall spacing.
+
+<p>
+  <img src="screenshot/mobile.png" width="200">
+</p>
 
 ---
 
@@ -110,36 +158,23 @@ milestone-1-liaro25/
 ├── about.html
 ├── journey.html
 ├── projects.html
-├── contact.html
-│
-├── css/
-│   └── style.css
-│
+├── contactme.html
+├── style.css
 ├── assets/
 │   ├── images/
 │   ├── logos/
+│   ├── icons/
 │   └── favicon.png
+│   └── screenshot.png
 │
 └── README.md
 ```
 
----
-
-## 🚀 **How to Run Locally**
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/revou-FSSE-Oct25/milestone-1-liaro25.git
-   ```
-2. Open any `.html` file in your browser
-3. Or use VS Code with Live Server extension
-
----
-
 ## 📌 **Future Enhancements**
 
+- Using Tailwind
 - Adding JavaScript interactions
-- Animations for smoother UI transitions
+- Animations and transition
 - More projects in the Projects section
 - Dark mode option
 
