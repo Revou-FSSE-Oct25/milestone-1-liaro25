@@ -322,7 +322,21 @@ p {
 }
 
 .journey-table tbody tr:nth-child(odd) {
-  background: #fafafa;
+  background: #f8f9fc;
+}
+
+.journey-table tbody tr:nth-child(even) {
+  background: #eef7f0;
+}
+
+.cv-download {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.cv-download a:hover {
+  color: #200d9a;
+  text-decoration: underline;
 }
 
 /* --- Responsive Table --- */
@@ -340,13 +354,14 @@ p {
   }
 
   .journey-table td {
-    display: flex;
+    display: block;
     justify-content: space-between;
     padding: 0.4rem 0;
     border: none;
   }
 
   .journey-table td::before {
+    display: block;
     content: attr(data-label);
     font-weight: 600;
     color: #555;
@@ -368,9 +383,31 @@ p {
 
 .company-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
-  justify-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .company-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.company-card {
+  background: rgba(255, 255, 255, 0.85); /* semi-transparent */
+  backdrop-filter: blur(6px); /* glass effect */
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  text-align: center;
 }
 
 .company-grid img {
