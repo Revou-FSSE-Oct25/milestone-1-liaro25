@@ -44,44 +44,27 @@
 
     <main>
       <!-- CONTACT SECTION -->
-      <section id="contact" class="section contact">
-        <div class="container contact-container">
+      <section class="contact-section">
+        <div class="contact-card">
           <h2>Contact Me</h2>
           <p class="contact-sub">
             Feel free to reach out for collaborations, freelance work, or just
             to say hello!
           </p>
+
           <form class="contact-form">
-            <label for="name">Full Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="Your name"
-            />
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" />
 
-            <label for="email">Email Address</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="your@email.com"
-            />
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com" />
 
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              required
-              placeholder="Write your message here..."
-            ></textarea>
+            <label>Message</label>
+            <textarea placeholder="Write your message here..."></textarea>
 
             <div class="contact-buttons">
-              <button type="submit" class="btn-send">Send</button>
-              <button type="reset" class="btn-reset">Reset</button>
+              <button class="btn-send">Send</button>
+              <button class="btn-reset">Reset</button>
             </div>
           </form>
         </div>
