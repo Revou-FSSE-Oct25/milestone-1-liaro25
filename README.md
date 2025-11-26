@@ -200,7 +200,7 @@ milestone-1-liaro25
 
 ## 📌 **Feedback Implementation** add 26/11/2025
 
-- Add backup fonts and use **@font-face** with locally hosted font files to ensure stability if external font links fail.
+- Add backup fonts in case the primary font fails to load.
 - Add `srcset` and `sizes` attributes for responsive image optimization across different screen sizes.
 - Add a slide-in animation for the quote under the Hero Title (Hero Subtitle) to enhance visual engagement.
 - Add a background image to the body using `background-size: cover`.
@@ -213,7 +213,7 @@ milestone-1-liaro25
 
 - Integrate TailwindCSS for faster and more scalable styling.
 - Add JavaScript interactions such as a mobile-friendly hamburger menu and “See More / See Less” toggles for the About Me and Projects sections.
-- Implement smooth animations to enhance overall user experience.
+- Implement advance animations to enhance overall user experience.
 - Expand the Projects section with more work samples.
 - Add a Dark Mode option for better accessibility and user preference.
 
