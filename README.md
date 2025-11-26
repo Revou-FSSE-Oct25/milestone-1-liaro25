@@ -149,60 +149,73 @@ The website is optimized for mobile using multiple targeted media queries for he
 
 ---
 
-## 📁 **Project Structure**
+## 📁 **Project Structure** revised 26/11/25
 
 ```
-milestone-1-liaro25/
-├── README.md
-├── about.html
-├── assets
-│   ├── documents
-│   │   └── CV Lia Rosliany 2.pdf
-│   ├── icons
-│   │   ├── about.png
-│   │   ├── contact.png
-│   │   ├── favicon-32x32.png
-│   │   ├── github.png
-│   │   ├── instagram.png
-│   │   ├── journey.png
-│   │   ├── linkedin.png
-│   │   └── projects.png
-│   ├── images
-│   │   └── pasFoto.png
-│   └── logos
-│       ├── amdocs.png
-│       ├── hgj.png
-│       ├── huawei.png
-│       ├── indosat.png
-│       ├── nokia.png
-│       ├── pccw.png
-│       ├── revou.png
-│       ├── tcj.png
-│       ├── telkomsel.png
-│       ├── telu.png
-│       ├── xl.jpeg
-│       └── yl.png
-├── contactme.html
-├── index.html
-├── journey.html
-├── projects.html
-├── screenshot
-│   ├── about.png
-│   ├── hero.png
-│   ├── journey.png
-│   ├── mobile.png
-│   └── project.png
-└── style.css
-
+milestone-1-liaro25
+    ├── about.html
+    ├── assets
+    │   ├── documents
+    │   │   └── CV Lia Rosliany 2.pdf
+    │   ├── icons
+    │   │   ├── about.png
+    │   │   ├── contact.png
+    │   │   ├── favicon-32x32.png
+    │   │   ├── github.png
+    │   │   ├── instagram.png
+    │   │   ├── journey.png
+    │   │   ├── linkedin.png
+    │   │   └── projects.png
+    │   ├── images
+    │   │   ├── fuji_bg.jpg
+    │   │   └── pasFoto.png
+    │   └── logos
+    │       ├── amdocs.png
+    │       ├── hgj.png
+    │       ├── huawei.png
+    │       ├── indosat.png
+    │       ├── nokia.png
+    │       ├── pccw.png
+    │       ├── revou.png
+    │       ├── tcj.png
+    │       ├── telkomsel.png
+    │       ├── telu.png
+    │       ├── xl.jpeg
+    │       └── yl.png
+    ├── contactme.html
+    ├── index.html
+    ├── journey.html
+    ├── projects.html
+    ├── README.md
+    ├── screenshot
+    │   ├── about.png
+    │   ├── hero.png
+    │   ├── journey.png
+    │   ├── mobile.png
+    │   └── project.png
+    └── style.css
 ```
+
+---
+
+## 📌 **Feedback Implementation** add 26/11/2025
+
+- Add backup fonts and use **@font-face** with locally hosted font files to ensure stability if external font links fail.
+- Add `srcset` and `sizes` attributes for responsive image optimization across different screen sizes.
+- Add a transition animation for the quote under the Hero Title to enhance visual engagement.
+- Add a background image to the body using `background-size: cover`.
+- Use `background-size: contain` for glimpse icons to maintain proper proportions.
+- Implement lazy loading on images except background image to improve overall page performance and loading speed.
+
+---
 
 ## 📌 **Future Enhancements**
 
-- Using Tailwind
-- Adding JavaScript interactions
-- Animations and transition
-- More projects in the Projects section
-- Dark mode option
+- Integrate TailwindCSS for faster and more scalable styling.
+- Add JavaScript interactions such as a mobile-friendly hamburger menu and “See More / See Less” toggles for the About Me and Projects sections.
+- Implement smooth animations to enhance overall user experience.
+- Expand the Projects section with more work samples.
+- Add a Dark Mode option for better accessibility and user preference.
 
 ---
 
