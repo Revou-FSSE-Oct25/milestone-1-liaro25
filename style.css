@@ -71,6 +71,20 @@ p {
   font-size: 1.1rem;
   color: #333;
   margin-bottom: 2.5rem;
+  opacity: 0;
+  transform: translateX(-20px); /* mulai dari kiri */
+  animation: slideIn 0.8s ease-out 0.3s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* ============================================================ */

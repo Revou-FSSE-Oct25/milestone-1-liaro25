@@ -202,7 +202,7 @@ milestone-1-liaro25
 
 - Add backup fonts and use **@font-face** with locally hosted font files to ensure stability if external font links fail.
 - Add `srcset` and `sizes` attributes for responsive image optimization across different screen sizes.
-- Add a transition animation for the quote under the Hero Title to enhance visual engagement.
+- Add a slide-in animation for the quote under the Hero Title (Hero Subtitle) to enhance visual engagement.
 - Add a background image to the body using `background-size: cover`.
 - Use `background-size: contain` for glimpse icons to maintain proper proportions.
 - Implement lazy loading on images except background image to improve overall page performance and loading speed.
